@@ -1,0 +1,12 @@
+databaseChangeLog:
+
+- changeSet:
+    id: 20220401-02
+    author: f.tripoli
+    changes:
+    - addColumn:
+        tableName: PROFILE
+        columns:
+        - column:
+            name: active
+            type: BOOLEAN

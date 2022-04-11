@@ -1,0 +1,1 @@
+docker build -t libertylab-liquidbase-postgres:v1.00.0 .

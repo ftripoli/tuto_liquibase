@@ -1,0 +1,22 @@
+databaseChangeLog:
+
+- changeSet:
+    id: 20220401-01
+    author: f.tripoli
+    changes:
+    - createTable:
+        tableName: PROFILE
+        columns:
+        - column:
+            name: id
+            type: BIGINT
+            autoIncrement: true
+            constraints:
+                primaryKey: true
+                primaryKeyName: PROFILE__pkey
+        - column:
+            name: code
+            type: VARCHAR(255)
+        - column:
+            name: label
+            type: VARCHAR(255)

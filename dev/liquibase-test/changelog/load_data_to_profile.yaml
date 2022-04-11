@@ -1,0 +1,26 @@
+databaseChangeLog:
+
+- changeSet:
+    id: 20220401-03
+    author: f.tripoli
+    changes:
+    - loadData:
+        tableName: PROFILE
+        file: data/profile.csv
+        separator: ;
+        quotchar: ''''
+        encoding: UTF-8
+        commentLineStartWith: //
+        columns:
+            - column:
+                header: code
+                name: code
+                type: STRING
+            - column:
+                header: label
+                name: label
+                type: STRING
+            - column:
+                header: active
+                name: active
+                type: BOOLEAN

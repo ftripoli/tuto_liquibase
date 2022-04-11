@@ -1,0 +1,1 @@
+docker run -dit --name libertylab-liquidbase-postgres_v1.00.0 -p 5432:5432 -e POSTGRES_PASSWORD=myPassword libertylab-liquidbase-postgres:v1.00.0
